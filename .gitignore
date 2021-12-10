@@ -35,3 +35,6 @@ typings/
 .yarn-integrity
 
 .idea/*
+
+# Rust build files
+rust/target

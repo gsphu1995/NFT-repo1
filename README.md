@@ -1,24 +1,50 @@
-# ACKCS Frontend
+### HI, There
 
-This project is frontend of ACKCS, a NFT marketplace on Solana.
+### Compile and Deploy Contracts
+- make sure you have solana installed
+- make sure you have rust installed
+- install phantom wallet on the browser or any from the list
+- make sure u have a solana wallet with SOL token (devnet)
+- Config to devnet
 
-## Project Status
-This project is currently in development
+```
+solana config set --url devnet
+```
+- Create wallet
+```
+solana-keygen new
+```
+- Add test token to the wallet
 
-## Installation and Setup Instructions
+```
+solana airdrop 5
+```
+navigate to the rust folder
+```
+cd rust
+```
+build the project
+```
+cargo build-bpf
+```
+- After the build step completes, deploy the program to devnet
+```
+solana program deploy ./path/to/the_program.so -u devnet
+```
+- Clear js/packages/web/.env variables to create of a fresh new store
 
-Installation:
+- start the app
+```
+cd ../js/packages
+yarn && yarn bootstrap
+yarn start
+```
 
-`yarn install`
+# Open the site in a browser 
 
-To Run Test Suite:
-
-`yarn test`
-
-To Start Server:
-
-`yarn start`
-
-To Visit App:
-
-`localhost:3000`
+```
+http://localhost:3000
+```
+- Now connect wallet
+- Create NFT
+- Sell NFT
