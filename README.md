@@ -47,8 +47,8 @@ solana program deploy ./path/to/the_program.so -u devnet
 - start the app
 
 ```
-cd ../js/packages
-yarn && yarn bootstrap
+cd ./js
+yarn && yarn bootstrap && yarn build
 yarn start
 ```
 
