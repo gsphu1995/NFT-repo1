@@ -8,7 +8,7 @@ import {
 } from '@solana/web3.js';
 
 export const FAIR_LAUNCH_PROGRAM_ID = new anchor.web3.PublicKey(
-  'DpYitSMsJgVGVkYsr7YPXrtYvEZgQPfMsu7K7PcF6iox',
+  'faircnAB9k59Y4TXmLabBULeuTLgV7TkGMGNkjnA15j',
 );
 
 export const toDate = (value?: anchor.BN) => {
@@ -43,7 +43,7 @@ export const formatNumber = {
 };
 
 export const SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID =
-  new anchor.web3.PublicKey('EuNvNkxadmdbJNwS4G41tYmkMPcfCDueDueEKWxscQez');
+  new anchor.web3.PublicKey('ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL');
 
 export const getFairLaunchTicketSeqLookup = async (
   tokenMint: anchor.web3.PublicKey,

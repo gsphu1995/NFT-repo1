@@ -21,7 +21,7 @@ export const mintNFT = async (
     'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA',
   );
   //const SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID = new PublicKey(
-  //  'EuNvNkxadmdbJNwS4G41tYmkMPcfCDueDueEKWxscQez',
+  //  'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL',
   //);
   const mintAccount = new Account();
   const tokenAccount = new Account();

@@ -951,7 +951,7 @@ pub fn assert_is_ata(
     mint: &Pubkey,
 ) -> ProgramResult {
     assert_derivation(
-        &Pubkey::from_str("EuNvNkxadmdbJNwS4G41tYmkMPcfCDueDueEKWxscQez").unwrap(),
+        &Pubkey::from_str("ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL").unwrap(),
         account,
         &[wallet.as_ref(), token_program.as_ref(), mint.as_ref()],
     )?;

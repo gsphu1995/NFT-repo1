@@ -9,7 +9,7 @@ import {
 } from './utils';
 
 export const FAIR_LAUNCH_PROGRAM = new anchor.web3.PublicKey(
-  'DpYitSMsJgVGVkYsr7YPXrtYvEZgQPfMsu7K7PcF6iox',
+  'faircnAB9k59Y4TXmLabBULeuTLgV7TkGMGNkjnA15j',
 );
 
 export interface FairLaunchAccount {
@@ -188,9 +188,8 @@ export const punchTicket = async (
 
   const ticket = fairLaunch.ticket.data;
 
-  const fairLaunchLotteryBitmap = ( //@ts-ignore
-    await getFairLaunchLotteryBitmap(fairLaunch.state.tokenMint)
-  )[0];
+  const fairLaunchLotteryBitmap = //@ts-ignore
+  (await getFairLaunchLotteryBitmap(fairLaunch.state.tokenMint))[0];
 
   const buyerTokenAccount = (
     await getAtaForMint(
@@ -520,8 +519,9 @@ export const purchaseTicket = async (
     );
 
   if (ticket) {
-    const fairLaunchLotteryBitmap = //@ts-ignore
-    (await getFairLaunchLotteryBitmap(fairLaunch.state.tokenMint))[0];
+    const fairLaunchLotteryBitmap = ( //@ts-ignore
+      await getFairLaunchLotteryBitmap(fairLaunch.state.tokenMint)
+    )[0];
     console.log(
       'Anchor wallet',
       anchorWallet.publicKey.toBase58(),

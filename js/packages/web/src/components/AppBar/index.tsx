@@ -50,7 +50,7 @@ const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'https://upload.wikimedia.org/wikipedia/commons/4/43/Gold_star_on_blue.gif'} />}
+          title={<img src={'/metaplex-logo.svg'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -109,7 +109,7 @@ const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'https://upload.wikimedia.org/wikipedia/commons/4/43/Gold_star_on_blue.gif'} />
+      <img src={'/metaplex-logo.svg'} />
     </Link>
   );
 };

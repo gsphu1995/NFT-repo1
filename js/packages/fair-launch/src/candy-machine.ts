@@ -10,11 +10,11 @@ import {
 } from './utils';
 
 export const CANDY_MACHINE_PROGRAM = new anchor.web3.PublicKey(
-  '4oFadyVnBu9hbTGcKWvq354FbBdDiRURqvEBuKkAYdbX',
+  'cndyAnrLdpjq1Ssp1z8xxDsB8dxe7u4HL5Nxi2K5WXZ',
 );
 
 const TOKEN_METADATA_PROGRAM_ID = new anchor.web3.PublicKey(
-  '6uYTFLcNeGfnGXxpLz6jegJYkqbSgf4dTQ8MzANzZVrk',
+  'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s',
 );
 
 interface CandyMachineState {

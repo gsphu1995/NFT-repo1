@@ -54,7 +54,7 @@ export const TOKEN_PROGRAM_ID = new PublicKey(
 );
 
 export const SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID = new PublicKey(
-  'EuNvNkxadmdbJNwS4G41tYmkMPcfCDueDueEKWxscQez',
+  'ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL',
 );
 
 export const BPF_UPGRADE_LOADER_ID = new PublicKey(
